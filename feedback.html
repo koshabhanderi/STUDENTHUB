@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback - StudentHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        /* GRID */
+        form {
+            background-color: white;
+            padding: 30px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            padding-top: 8px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* FLEXBOX */
+        .buttons {
+            grid-column: 2;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+                width: 90%;
+            }
+
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            .buttons {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Feedback</h1>
+        <p>We value your feedback</p>
+    </header>
+
+    <main>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Rating</label>
+
+            <select>
+                <option>Select Rating</option>
+                <option>Excellent</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+
+            <label>Feedback</label>
+
+            <textarea rows="6"
+                placeholder="Write your feedback here"></textarea>
+
+            <div class="buttons">
+
+                <input type="submit" value="Submit Feedback">
+
+                <a href="home.html">
+                    Go Back to Home
+                </a>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>StudentHub &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>

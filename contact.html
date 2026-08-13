@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        main {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+
+            /* GRID */
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            padding-top: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: blue;
+            margin-left: 10px;
+        }
+
+        .form-buttons {
+            grid-column: 2;
+            
+            /* FLEXBOX */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+                width: 90%;
+            }
+
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            .form-buttons {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea rows="5"></textarea>
+
+            <div class="form-buttons">
+                <input type="submit" value="Send">
+                <a class="home-link" href="home.html">
+                    Go Back to Home
+                </a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>StudentHub</p>
+    </footer>
+
+</body>
+
+</html>

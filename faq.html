@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQ</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        main {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        /* GRID */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .faq-card {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: #4CAF50;
+        }
+
+        /* FLEXBOX */
+        .back-link {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+                width: 90%;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <main>
+
+        <div class="faq-grid">
+
+            <div class="faq-card">
+                <h3>How do I register?</h3>
+                <p>
+                    Open the Register page and fill the form.
+                </p>
+            </div>
+
+            <div class="faq-card">
+                <h3>How do I login?</h3>
+                <p>
+                    Use your username and password.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="back-link">
+            <a href="home.html">Go Back to Home</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>StudentHub</p>
+    </footer>
+
+</body>
+
+</html>
