@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudentHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            margin: 0;
+            min-height: 100vh;
+
+            /* FLEXBOX */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        main {
+            flex: 1;
+
+            /* FLEXBOX */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .welcome-box {
+            background-color: white;
+            width: 80%;
+            max-width: 700px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0px 0px 12px gray;
+        }
+
+        .welcome-box h2 {
+            color: #4CAF50;
+        }
+
+        .welcome-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* FLEXBOX */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .buttons a:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+
+            .welcome-box {
+                width: 95%;
+                padding: 25px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .buttons a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentHub</h1>
+        <p>Your Student Portal</p>
+    </header>
+
+    <main>
+
+        <div class="welcome-box">
+
+            <h2>Welcome to StudentHub</h2>
+
+            <p>
+                StudentHub is a student portal that helps students
+                manage their academic information, courses,
+                attendance, events and more.
+            </p>
+
+            <div class="buttons">
+
+                <a href="home.html">
+                    Enter StudentHub
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>StudentHub &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
